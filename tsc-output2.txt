@@ -1,0 +1,2 @@
+server/replit_integrations/image/routes.ts(22,14): error TS18048: 'imageData' is possibly 'undefined'.
+server/replit_integrations/image/routes.ts(23,19): error TS18048: 'imageData' is possibly 'undefined'.
