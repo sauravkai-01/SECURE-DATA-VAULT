@@ -1,0 +1,1 @@
+{"username":"testuser","email":"test@test.com","password":"967024d5abe532052e4f2e2eb1b26e0f:0129f018e70279417a69c4cea5a06f00636ac6eddf369119b41b40106094021e","id":1,"createdAt":"2026-04-27T18:52:52.710Z"}
