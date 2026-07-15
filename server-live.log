@@ -1,0 +1,163 @@
+
+> rest-express@1.0.0 dev
+> cross-env NODE_ENV=development tsx server/index.ts
+
+[2m12:21:28 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because lockfile has changed
+12:21:28 AM [express] serving on http://127.0.0.1:5000
+12:22:52 AM [express] POST /api/auth/register 201 in 38ms :: {"username":"testuser","email":"test@test.com","password":"967024d5abe532052e4f2e2eb1b26e0f:0129f018e70279417a69c4cea5a06f00636ac6eddf369119b41b40106094021e","id":1,"createdAt":"2026-04-27T18:52:52.710Z"}
+Browserslist: browsers data (caniuse-lite) is 6 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+12:25:05 AM [express] GET /api/auth/me 401 in 3ms :: {"message":"Unauthorized"}
+12:25:16 AM [express] POST /api/auth/register 201 in 23ms :: {"username":"saurav_kai","email":"srk85803@gmail.com","password":"a6bb3febd75769bfc20beea68da4eaa1:9eb014e6cbfdf4847c8f8a7c62e751a2c0a1e07284e6d6b0365a3675f8c9e8eb","id":2,"createdAt":"2026-04-27T18:55:16.335Z"}
+12:25:16 AM [express] GET /api/items 304 in 4ms :: []
+12:25:16 AM [express] GET /api/items/trash 200 in 3ms :: []
+12:25:16 AM [express] GET /api/folders 200 in 1ms :: []
+12:25:16 AM [express] GET /api/audit-logs 200 in 2ms :: [{"id":2,"userId":2,"action":"REGISTER","details":"Account created","ipAddress":"127.0.0.1","createdAt":"2026-04-27T18:55:16.336Z"}]
+12:26:40 AM [express] POST /api/items/upload 201 in 72ms :: {"userId":2,"originalName":"cocubes-syllabus-pattern.pdf","fileType":"application/pdf","encryptedDataPath":"E:\\Secure-Data-Vault-share\\uploads\\9743b668-0c56-452d-8ac0-c7987ea8462d.enc","iv":"ff5062ad03a70477fee87537","salt":"5b8ff7a21e4944263b27a865dfeb3a2c","hash":"13075d9e4e3cceb0e83ed0e56e89afc27635c17592cf9b2210799b06163b421d","hmac":"83d48bb407b55cca47bfa3a6d2fb9240c3eb32f13748822edae3e468297b934f","accessCode":"1859","linkId":"2e6de12b-71e7-4739-b1d8-95024ee598ea","expiresAt":"2026-04-27T19:01:40.295Z","folder":"General","aiSummary":null,"isFavorite":false,"tags":[],"deletedAt":null,"id":1,"createdAt":"2026-04-27T18:56:40.295Z"}
+12:26:40 AM [express] GET /api/items 200 in 2ms :: [{"userId":2,"originalName":"cocubes-syllabus-pattern.pdf","fileType":"application/pdf","encryptedDataPath":"E:\\Secure-Data-Vault-share\\uploads\\9743b668-0c56-452d-8ac0-c7987ea8462d.enc","iv":"ff5062ad03a70477fee87537","salt":"5b8ff7a21e4944263b27a865dfeb3a2c","hash":"13075d9e4e3cceb0e83ed0e56e89afc27635c17592cf9b2210799b06163b421d","hmac":"83d48bb407b55cca47bfa3a6d2fb9240c3eb32f13748822edae3e468297b934f","accessCode":"1859","linkId":"2e6de12b-71e7-4739-b1d8-95024ee598ea","expiresAt":"2026-04-27T19:01:40.295Z","folder":"General","aiSummary":null,"isFavorite":false,"tags":[],"deletedAt":null,"id":1,"createdAt":"2026-04-27T18:56:40.295Z"}]
+12:26:40 AM [express] GET /api/folders 200 in 2ms :: ["General"]
+12:28:12 AM [express] POST /api/items/upload 201 in 26ms :: {"userId":2,"originalName":"text_message.txt","fileType":"text/plain","encryptedDataPath":"E:\\Secure-Data-Vault-share\\uploads\\b4793ad2-4f5c-4d6f-860b-32c73f11a492.enc","iv":"b322d29299180e89b6dddb79","salt":"9fa9aabc6453bcfbaaaa8bd70f33a7d4","hash":"8f434346648f6b96df89dda901c5176b10a6d83961dd3c1ac88b59b2dc327aa4","hmac":"6ef519b141814d01f5ce5877444c7b4907679411e485ed11850970acbd8722e7","accessCode":"2310","linkId":"272ff3be-329d-4c75-af08-a269aa4c2513","expiresAt":"2026-04-27T19:03:12.191Z","folder":"General","aiSummary":null,"isFavorite":false,"tags":[],"deletedAt":null,"id":2,"createdAt":"2026-04-27T18:58:12.191Z"}
+12:28:12 AM [express] GET /api/items 200 in 2ms :: [{"userId":2,"originalName":"cocubes-syllabus-pattern.pdf","fileType":"application/pdf","encryptedDataPath":"E:\\Secure-Data-Vault-share\\uploads\\9743b668-0c56-452d-8ac0-c7987ea8462d.enc","iv":"ff5062ad03a70477fee87537","salt":"5b8ff7a21e4944263b27a865dfeb3a2c","hash":"13075d9e4e3cceb0e83ed0e56e89afc27635c17592cf9b2210799b06163b421d","hmac":"83d48bb407b55cca47bfa3a6d2fb9240c3eb32f13748822edae3e468297b934f","accessCode":"1859","linkId":"2e6de12b-71e7-4739-b1d8-95024ee598ea","expiresAt":"2026-04-27T19:01:40.295Z","folder":"General","aiSummary":null,"isFavorite":false,"tags":[],"deletedAt":null,"id":1,"createdAt":"2026-04-27T18:56:40.295Z"},{"userId":2,"originalName":"text_message.txt","fileType":"text/plain","encryptedDataPath":"E:\\Secure-Data-Vault-share\\uploads\\b4793ad2-4f5c-4d6f-860b-32c73f11a492.enc","iv":"b322d29299180e89b6dddb79","salt":"9fa9aabc6453bcfbaaaa8bd70f33a7d4","hash":"8f434346648f6b96df89dda901c5176b10a6d83961dd3c1ac88b59b2dc327aa4","hmac":"6ef519b141814d01f5ce5877444c7b4907679411e485ed11850970acbd8722e7","accessCode":"2310","linkId":"272ff3be-329d-4c75-af08-a269aa4c2513","expiresAt":"2026-04-27T19:03:12.191Z","folder":"General","aiSummary":null,"isFavorite":false,"tags":[],"deletedAt":null,"id":2,"createdAt":"2026-04-27T18:58:12.191Z"}]
+12:28:12 AM [express] GET /api/folders 304 in 1ms :: ["General"]
+12:29:26 AM [express] DELETE /api/items/2 204 in 1ms
+12:29:26 AM [express] GET /api/items 200 in 2ms :: [{"userId":2,"originalName":"cocubes-syllabus-pattern.pdf","fileType":"application/pdf","encryptedDataPath":"E:\\Secure-Data-Vault-share\\uploads\\9743b668-0c56-452d-8ac0-c7987ea8462d.enc","iv":"ff5062ad03a70477fee87537","salt":"5b8ff7a21e4944263b27a865dfeb3a2c","hash":"13075d9e4e3cceb0e83ed0e56e89afc27635c17592cf9b2210799b06163b421d","hmac":"83d48bb407b55cca47bfa3a6d2fb9240c3eb32f13748822edae3e468297b934f","accessCode":"1859","linkId":"2e6de12b-71e7-4739-b1d8-95024ee598ea","expiresAt":"2026-04-27T19:01:40.295Z","folder":"General","aiSummary":null,"isFavorite":false,"tags":[],"deletedAt":null,"id":1,"createdAt":"2026-04-27T18:56:40.295Z"}]
+12:29:26 AM [express] GET /api/items/trash 304 in 2ms :: []
+[2m12:36:55 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/dashboard.tsx, /src/index.css[22m
+[2m12:36:55 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/dashboard.tsx, /src/index.css[22m
+[2m12:37:41 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/dashboard.tsx, /src/index.css[22m
+[2m12:38:14 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/dashboard.tsx, /src/index.css[22m
+[2m12:39:17 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/settings.tsx, /src/index.css[22m
+[2m12:39:18 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/settings.tsx, /src/index.css[22m
+[2m12:39:19 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/settings.tsx, /src/index.css[22m
+[2m12:39:22 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/settings.tsx, /src/index.css[22m
+[2m12:39:25 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/settings.tsx, /src/index.css[22m
+[2m12:39:28 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/settings.tsx, /src/index.css[22m
+[2m12:39:30 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/settings.tsx, /src/index.css[22m
+[2m12:39:33 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/settings.tsx, /src/index.css[22m
+[2m12:39:37 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/settings.tsx, /src/index.css[22m
+[2m12:39:40 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/settings.tsx, /src/index.css[22m
+[2m12:39:42 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/settings.tsx, /src/index.css[22m
+[2m12:39:44 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/settings.tsx, /src/index.css[22m
+[2m12:39:46 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/settings.tsx, /src/index.css[22m
+[2m12:39:48 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/settings.tsx, /src/index.css[22m
+[2m12:40:17 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/notepad.tsx, /src/index.css[22m
+[2m12:40:52 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/notepad.tsx, /src/index.css[22m
+12:43:18 AM [express] GET /api/auth/me 200 in 2ms :: {"username":"saurav_kai","email":"srk85803@gmail.com","password":"a6bb3febd75769bfc20beea68da4eaa1:9eb014e6cbfdf4847c8f8a7c62e751a2c0a1e07284e6d6b0365a3675f8c9e8eb","id":2,"createdAt":"2026-04-27T18:55:16.335Z"}
+12:43:34 AM [express] GET /api/items 200 in 3ms :: []
+12:43:34 AM [express] GET /api/items/trash 304 in 3ms :: []
+12:43:34 AM [express] GET /api/folders 200 in 3ms :: []
+12:43:34 AM [express] GET /api/audit-logs 200 in 1ms :: [{"id":2,"userId":2,"action":"REGISTER","details":"Account created","ipAddress":"127.0.0.1","createdAt":"2026-04-27T18:55:16.336Z"},{"id":3,"userId":2,"action":"UPLOAD","details":"Uploaded: cocubes-syllabus-pattern.pdf (application/pdf)","ipAddress":"127.0.0.1","createdAt":"2026-04-27T18:56:40.295Z"},{"id":4,"userId":2,"action":"UPLOAD","details":"Uploaded: text_message.txt (text/plain)","ipAddress":"127.0.0.1","createdAt":"2026-04-27T18:58:12.191Z"},{"id":5,"userId":2,"action":"DELETE","details":"Deleted item: text_message.txt","ipAddress":"127.0.0.1","createdAt":"2026-04-27T18:59:26.479Z"}]
+12:43:55 AM [express] POST /api/auth/logout 200 in 4ms :: {"message":"Logged out"}
+12:44:01 AM [express] POST /api/auth/login 401 in 40ms :: {"message":"Invalid username or password"}
+12:44:04 AM [express] POST /api/auth/login 200 in 29ms :: {"username":"saurav_kai","email":"srk85803@gmail.com","password":"a6bb3febd75769bfc20beea68da4eaa1:9eb014e6cbfdf4847c8f8a7c62e751a2c0a1e07284e6d6b0365a3675f8c9e8eb","id":2,"createdAt":"2026-04-27T18:55:16.335Z"}
+12:44:40 AM [express] GET /api/auth/me 401 in 1ms :: {"message":"Unauthorized"}
+[2m12:49:36 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/notepad.tsx, /src/index.css[22m
+12:50:42 AM [express] GET /api/auth/me 304 in 2ms :: {"username":"saurav_kai","email":"srk85803@gmail.com","password":"a6bb3febd75769bfc20beea68da4eaa1:9eb014e6cbfdf4847c8f8a7c62e751a2c0a1e07284e6d6b0365a3675f8c9e8eb","id":2,"createdAt":"2026-04-27T18:55:16.335Z"}
+12:50:42 AM [express] GET /api/items 304 in 1ms :: []
+12:52:40 AM [express] GET /api/auth/me 304 in 2ms :: {"username":"saurav_kai","email":"srk85803@gmail.com","password":"a6bb3febd75769bfc20beea68da4eaa1:9eb014e6cbfdf4847c8f8a7c62e751a2c0a1e07284e6d6b0365a3675f8c9e8eb","id":2,"createdAt":"2026-04-27T18:55:16.335Z"}
+12:52:40 AM [express] GET /api/items 304 in 1ms :: []
+12:52:45 AM [express] GET /api/audit-logs 200 in 40ms :: [{"id":2,"userId":2,"action":"REGISTER","details":"Account created","ipAddress":"127.0.0.1","createdAt":"2026-04-27T18:55:16.336Z"},{"id":3,"userId":2,"action":"UPLOAD","details":"Uploaded: cocubes-syllabus-pattern.pdf (application/pdf)","ipAddress":"127.0.0.1","createdAt":"2026-04-27T18:56:40.295Z"},{"id":4,"userId":2,"action":"UPLOAD","details":"Uploaded: text_message.txt (text/plain)","ipAddress":"127.0.0.1","createdAt":"2026-04-27T18:58:12.191Z"},{"id":5,"userId":2,"action":"DELETE","details":"Deleted item: text_message.txt","ipAddress":"127.0.0.1","createdAt":"2026-04-27T18:59:26.479Z"},{"id":6,"userId":2,"action":"LOGIN","details":"Successful login","ipAddress":"127.0.0.1","createdAt":"2026-04-27T19:14:04.363Z"}]
+12:52:55 AM [express] GET /api/auth/me 304 in 2ms :: {"username":"saurav_kai","email":"srk85803@gmail.com","password":"a6bb3febd75769bfc20beea68da4eaa1:9eb014e6cbfdf4847c8f8a7c62e751a2c0a1e07284e6d6b0365a3675f8c9e8eb","id":2,"createdAt":"2026-04-27T18:55:16.335Z"}
+12:53:02 AM [express] POST /api/auth/login 200 in 72ms :: {"username":"saurav_kai","email":"srk85803@gmail.com","password":"a6bb3febd75769bfc20beea68da4eaa1:9eb014e6cbfdf4847c8f8a7c62e751a2c0a1e07284e6d6b0365a3675f8c9e8eb","id":2,"createdAt":"2026-04-27T18:55:16.335Z"}
+12:53:02 AM [express] GET /api/items 304 in 1ms :: []
+12:53:02 AM [express] GET /api/items/trash 304 in 3ms :: []
+12:53:02 AM [express] GET /api/folders 304 in 4ms :: []
+12:53:02 AM [express] GET /api/audit-logs 200 in 2ms :: [{"id":2,"userId":2,"action":"REGISTER","details":"Account created","ipAddress":"127.0.0.1","createdAt":"2026-04-27T18:55:16.336Z"},{"id":3,"userId":2,"action":"UPLOAD","details":"Uploaded: cocubes-syllabus-pattern.pdf (application/pdf)","ipAddress":"127.0.0.1","createdAt":"2026-04-27T18:56:40.295Z"},{"id":4,"userId":2,"action":"UPLOAD","details":"Uploaded: text_message.txt (text/plain)","ipAddress":"127.0.0.1","createdAt":"2026-04-27T18:58:12.191Z"},{"id":5,"userId":2,"action":"DELETE","details":"Deleted item: text_message.txt","ipAddress":"127.0.0.1","createdAt":"2026-04-27T18:59:26.479Z"},{"id":6,"userId":2,"action":"LOGIN","details":"Successful login","ipAddress":"127.0.0.1","createdAt":"2026-04-27T19:14:04.363Z"},{"id":7,"userId":2,"action":"LOGIN","details":"Successful login","ipAddress":"127.0.0.1","createdAt":"2026-04-27T19:23:02.084Z"}]
+[2m12:58:53 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/notepad.tsx, /src/index.css[22m
+1:00:06 AM [express] GET /api/auth/me 304 in 1ms :: {"username":"saurav_kai","email":"srk85803@gmail.com","password":"a6bb3febd75769bfc20beea68da4eaa1:9eb014e6cbfdf4847c8f8a7c62e751a2c0a1e07284e6d6b0365a3675f8c9e8eb","id":2,"createdAt":"2026-04-27T18:55:16.335Z"}
+1:00:06 AM [express] GET /api/items 304 in 1ms :: []
+1:04:53 AM [express] GET /api/auth/me 304 in 1ms :: {"username":"saurav_kai","email":"srk85803@gmail.com","password":"a6bb3febd75769bfc20beea68da4eaa1:9eb014e6cbfdf4847c8f8a7c62e751a2c0a1e07284e6d6b0365a3675f8c9e8eb","id":2,"createdAt":"2026-04-27T18:55:16.335Z"}
+1:04:53 AM [express] GET /api/items 304 in 1ms :: []
+1:05:48 AM [express] POST /api/auth/logout 200 in 8ms :: {"message":"Logged out"}
+1:06:10 AM [express] POST /api/auth/register 201 in 31ms :: {"username":"usduug","email":"shivshankarojha438@gmail.com","password":"ed61e7ec9b1149f350869924eebc1af4:901d4eb51914405ac430f6c241424cb813204f851041156f7d9a5d678b68c336","id":3,"createdAt":"2026-04-27T19:36:10.297Z"}
+1:06:10 AM [express] GET /api/audit-logs 200 in 2ms :: [{"id":8,"userId":3,"action":"REGISTER","details":"Account created","ipAddress":"127.0.0.1","createdAt":"2026-04-27T19:36:10.298Z"}]
+1:06:10 AM [express] GET /api/folders 304 in 1ms :: []
+1:06:10 AM [express] GET /api/items/trash 304 in 0ms :: []
+1:11:33 AM [express] GET /api/auth/me 200 in 1ms :: {"username":"usduug","email":"shivshankarojha438@gmail.com","password":"ed61e7ec9b1149f350869924eebc1af4:901d4eb51914405ac430f6c241424cb813204f851041156f7d9a5d678b68c336","id":3,"createdAt":"2026-04-27T19:36:10.297Z"}
+1:11:33 AM [express] GET /api/items 304 in 0ms :: []
+1:12:01 AM [express] GET /api/auth/me 401 in 2ms :: {"message":"Unauthorized"}
+1:12:10 AM [express] POST /api/auth/login 200 in 23ms :: {"username":"saurav_kai","email":"srk85803@gmail.com","password":"a6bb3febd75769bfc20beea68da4eaa1:9eb014e6cbfdf4847c8f8a7c62e751a2c0a1e07284e6d6b0365a3675f8c9e8eb","id":2,"createdAt":"2026-04-27T18:55:16.335Z"}
+1:12:10 AM [express] GET /api/items 200 in 2ms :: []
+1:12:10 AM [express] GET /api/items/trash 200 in 1ms :: []
+1:12:10 AM [express] GET /api/folders 200 in 2ms :: []
+1:12:10 AM [express] GET /api/audit-logs 200 in 1ms :: [{"id":2,"userId":2,"action":"REGISTER","details":"Account created","ipAddress":"127.0.0.1","createdAt":"2026-04-27T18:55:16.336Z"},{"id":3,"userId":2,"action":"UPLOAD","details":"Uploaded: cocubes-syllabus-pattern.pdf (application/pdf)","ipAddress":"127.0.0.1","createdAt":"2026-04-27T18:56:40.295Z"},{"id":4,"userId":2,"action":"UPLOAD","details":"Uploaded: text_message.txt (text/plain)","ipAddress":"127.0.0.1","createdAt":"2026-04-27T18:58:12.191Z"},{"id":5,"userId":2,"action":"DELETE","details":"Deleted item: text_message.txt","ipAddress":"127.0.0.1","createdAt":"2026-04-27T18:59:26.479Z"},{"id":6,"userId":2,"action":"LOGIN","details":"Successful login","ipAddress":"127.0.0.1","createdAt":"2026-04-27T19:14:04.363Z"},{"id":7,"userId":2,"action":"LOGIN","details":"Successful login","ipAddress":"127.0.0.1","createdAt":"2026-04-27T19:23:02.084Z"},{"id":9,"userId":2,"action":"LOGIN","details":"Successful login","ipAddress":"127.0.0.1","createdAt":"2026-04-27T19:42:10.105Z"}]
+1:12:54 AM [express] POST /api/items/upload 201 in 43ms :: {"userId":2,"originalName":"text_message.txt","fileType":"text/plain","encryptedDataPath":"E:\\Secure-Data-Vault-share\\uploads\\d7847b1a-95df-4297-bdcd-a5b1679fe06b.enc","iv":"b68e43b83341358858f89f4f","salt":"e7ad5c5ed7fce9b1b9ce0ba6df99d927","hash":"63db76e25f44806c4e7b858cae93bf56d159a6a679cdf305bb8f589b440b386e","hmac":"1e519492049fe861895456ae9563071946efc7df17db2384224f98badb54d2b0","accessCode":"9314","linkId":"6e7b52aa-dc21-4088-a4c8-5991261fc3b7","expiresAt":"2026-04-27T19:47:54.785Z","folder":"General","aiSummary":null,"isFavorite":false,"tags":[],"deletedAt":null,"id":3,"createdAt":"2026-04-27T19:42:54.785Z"}
+1:12:54 AM [express] GET /api/items 200 in 1ms :: [{"userId":2,"originalName":"text_message.txt","fileType":"text/plain","encryptedDataPath":"E:\\Secure-Data-Vault-share\\uploads\\d7847b1a-95df-4297-bdcd-a5b1679fe06b.enc","iv":"b68e43b83341358858f89f4f","salt":"e7ad5c5ed7fce9b1b9ce0ba6df99d927","hash":"63db76e25f44806c4e7b858cae93bf56d159a6a679cdf305bb8f589b440b386e","hmac":"1e519492049fe861895456ae9563071946efc7df17db2384224f98badb54d2b0","accessCode":"9314","linkId":"6e7b52aa-dc21-4088-a4c8-5991261fc3b7","expiresAt":"2026-04-27T19:47:54.785Z","folder":"General","aiSummary":null,"isFavorite":false,"tags":[],"deletedAt":null,"id":3,"createdAt":"2026-04-27T19:42:54.785Z"}]
+[2m1:58:17 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/dashboard.tsx, /src/index.css[22m
+[2m1:58:18 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/dashboard.tsx, /src/index.css[22m
+[2m1:58:19 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/dashboard.tsx, /src/index.css[22m
+[2m1:58:23 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/dashboard.tsx, /src/index.css[22m
+[2m2:02:42 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/dashboard.tsx, /src/index.css[22m
+[2m2:02:42 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/dashboard.tsx, /src/index.css[22m
+[2m2:02:55 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/dashboard.tsx, /src/index.css[22m
+[2m2:02:56 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/dashboard.tsx, /src/index.css[22m
+[2m2:02:58 AM[22m [31m[1m[vite][22m[39m [31mInternal server error: E:\Secure-Data-Vault-share\client\src\pages\dashboard.tsx: Unexpected token, expected "," (660:8)
+
+[0m [90m 658 |[31m               [33m<[31m[33mTableBody[31m[33m>[31m
+ [90m 659 |[31m                 {filteredItems[33m.[31mmap((item) [33m=>[31m (
+[31m[1m>[22m[31m[90m 660 |[31m hover[33m:[31mbg[33m-[31mwhite[33m/[31m[35m5[31m
+ [90m     |[31m         [31m[1m^[22m[31m
+ [90m 661 |[31m                     [33m<[31m[33mTableCell[31m className[33m=[31m[32m"px-4"[31m[33m>[31m
+ [90m 662 |[31m                        [33m<[31m[33mButton[31m 
+ [90m 663 |[31m                         variant[33m=[31m[32m"ghost"[31m [0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mE:/Secure-Data-Vault-share/client/src/pages/dashboard.tsx[39m:660:8
+[33m  672 |                      </TableCell>
+  673 |                      <TableCell>
+  674 |                        <div className="flex items-center gap-4">
+      |      ^
+  675 |                          <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center group-hover:...
+  676 |                            {getFileIcon(item.fileType)}[39m
+      at toParseError (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parse-error.ts:95:45)
+      at TypeScriptParserMixin.raise (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\tokenizer\index.ts:1503:19)
+      at TypeScriptParserMixin.unexpected (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\tokenizer\index.ts:1543:16)
+      at TypeScriptParserMixin.expect (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\util.ts:157:12)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:1789:14)
+      at TypeScriptParserMixin.parseExprAtom (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:1162:21)
+      at TypeScriptParserMixin.parseExprAtom (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\plugins\jsx\index.ts:583:22)
+      at TypeScriptParserMixin.parseExprSubscripts (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:734:23)
+      at TypeScriptParserMixin.parseUpdate (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:713:21)
+      at TypeScriptParserMixin.parseMaybeUnary (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:675:23)
+      at TypeScriptParserMixin.parseMaybeUnary (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\plugins\typescript\index.ts:3855:20)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:409:14)
+      at TypeScriptParserMixin.parseExprOps (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:421:23)
+      at TypeScriptParserMixin.parseMaybeConditional (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:376:23)
+      at TypeScriptParserMixin.parseMaybeAssign (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:301:21)
+      at TypeScriptParserMixin.parseMaybeAssign (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\plugins\typescript\index.ts:3727:22)
+      at TypeScriptParserMixin.parseFunctionBody (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:2602:14)
+      at TypeScriptParserMixin.parseArrowExpression (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:2553:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:1837:12)
+      at TypeScriptParserMixin.parseExprAtom (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:1162:21)
+      at TypeScriptParserMixin.parseExprAtom (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\plugins\jsx\index.ts:583:22)
+      at TypeScriptParserMixin.parseExprSubscripts (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:734:23)
+      at TypeScriptParserMixin.parseUpdate (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:713:21)
+      at TypeScriptParserMixin.parseMaybeUnary (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:675:23)
+      at TypeScriptParserMixin.parseMaybeUnary (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\plugins\typescript\index.ts:3855:20)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:409:14)
+      at TypeScriptParserMixin.parseExprOps (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:421:23)
+      at TypeScriptParserMixin.parseMaybeConditional (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:376:23)
+      at TypeScriptParserMixin.parseMaybeAssign (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:301:21)
+      at TypeScriptParserMixin.parseMaybeAssign (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\plugins\typescript\index.ts:3727:22)
+      at callback (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:257:12)
+      at TypeScriptParserMixin.allowInAnd (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:3192:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:256:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:3306:17)
+      at TypeScriptParserMixin.parseExprListItem (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:2788:18)
+      at TypeScriptParserMixin.parseCallExpressionArguments (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:1034:14)
+      at TypeScriptParserMixin.parseCoverCallAndAsyncArrowHead (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:914:29)
+      at TypeScriptParserMixin.parseSubscript (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:796:19)
+      at TypeScriptParserMixin.parseSubscript (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\plugins\typescript\index.ts:2850:20)
+      at TypeScriptParserMixin.parseSubscripts (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:755:19)
+      at TypeScriptParserMixin.parseExprSubscripts (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:740:17)
+      at TypeScriptParserMixin.parseUpdate (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:713:21)
+      at TypeScriptParserMixin.parseMaybeUnary (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:675:23)
+      at TypeScriptParserMixin.parseMaybeUnary (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\plugins\typescript\index.ts:3855:20)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:409:14)
+      at TypeScriptParserMixin.parseExprOps (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:421:23)
+      at TypeScriptParserMixin.parseMaybeConditional (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:376:23)
+      at TypeScriptParserMixin.parseMaybeAssign (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:301:21)
+      at TypeScriptParserMixin.parseMaybeAssign (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\plugins\typescript\index.ts:3727:22)
+      at TypeScriptParserMixin.parseExpressionBase (E:\Secure-Data-Vault-share\node_modules\@babel\parser\src\parser\expression.ts:226:23)
+
+E:\Secure-Data-Vault-share>

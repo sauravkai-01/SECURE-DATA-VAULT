@@ -1,0 +1,70 @@
+DATABASE_URL not set, database features will be disabled.
+7:17:51 PM [express] serving on http://127.0.0.1:5000
+[31m(!) Failed to run dependency scan. Skipping dependency pre-bundling. Error: [31m  Failed to scan for dependencies from entries:
+  e:/Secure-Data-Vault-share/client/index.html
+
+  [31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mUnexpected closing "DialogHeader" tag does not match opening "div" tag[0m
+
+    client/src/pages/dashboard.tsx:178:12:
+[37m      178 │           </[32mDialogHeader[37m>
+          │             [32m~~~~~~~~~~~~[37m
+          ╵             [32mdiv[0m
+
+  The opening "div" tag is here:
+
+    client/src/pages/dashboard.tsx:163:13:
+[37m      163 │             <[32mdiv[37m className="flex items-center justify-between">
+          ╵              [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mThe character "}" is not valid inside a JSX element[0m
+
+    client/src/pages/dashboard.tsx:226:11:
+[37m      226 │           )[32m}[37m
+          │            [32m^[37m
+          ╵            [32m{'}'}[0m
+
+  Did you mean to escape it as "{'}'}" instead?
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mThe character "}" is not valid inside a JSX element[0m
+
+    client/src/pages/dashboard.tsx:240:11:
+[37m      240 │           )[32m}[37m
+          │            [32m^[37m
+          ╵            [32m{'}'}[0m
+
+  Did you mean to escape it as "{'}'}" instead?
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mUnexpected closing "DialogContent" tag does not match opening "div" tag[0m
+
+    client/src/pages/dashboard.tsx:250:8:
+[37m      250 │       </[32mDialogContent[37m>
+          │         [32m~~~~~~~~~~~~~[37m
+          ╵         [32mdiv[0m
+
+  The opening "div" tag is here:
+
+    client/src/pages/dashboard.tsx:229:13:
+[37m      229 │             <[32mdiv[37m className="space-y-4">
+          ╵              [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mUnterminated regular expression[0m
+
+    client/src/pages/dashboard.tsx:251:13:
+[37m      251 │     </Dialog>[32m[37m
+          ╵              [32m^[0m
+
+
+    at failureErrorWithLog (e:\Secure-Data-Vault-share\node_modules\vite\node_modules\esbuild\lib\main.js:1467:15)
+    at e:\Secure-Data-Vault-share\node_modules\vite\node_modules\esbuild\lib\main.js:926:25
+    at runOnEndCallbacks (e:\Secure-Data-Vault-share\node_modules\vite\node_modules\esbuild\lib\main.js:1307:45)
+    at buildResponseToResult (e:\Secure-Data-Vault-share\node_modules\vite\node_modules\esbuild\lib\main.js:924:7)
+    at e:\Secure-Data-Vault-share\node_modules\vite\node_modules\esbuild\lib\main.js:936:9
+    at new Promise (<anonymous>)
+    at requestCallbacks.on-end (e:\Secure-Data-Vault-share\node_modules\vite\node_modules\esbuild\lib\main.js:935:54)
+    at handleRequest (e:\Secure-Data-Vault-share\node_modules\vite\node_modules\esbuild\lib\main.js:628:17)
+    at handleIncomingPacket (e:\Secure-Data-Vault-share\node_modules\vite\node_modules\esbuild\lib\main.js:653:7)
+    at Socket.readFromStdout (e:\Secure-Data-Vault-share\node_modules\vite\node_modules\esbuild\lib\main.js:581:7)[39m
