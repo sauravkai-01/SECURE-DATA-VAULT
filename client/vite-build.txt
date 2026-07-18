@@ -1,0 +1,24 @@
+[36mvite v7.3.0 [32mbuilding client environment for production...[36m[39m
+transforming...
+Browserslist: browsers data (caniuse-lite) is 6 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+[1m[33mwarn[39m[22m - The `content` option in your Tailwind CSS configuration is missing or empty.
+[1m[33mwarn[39m[22m - Configure your content sources or your generated CSS will be missing styles.
+[1m[33mwarn[39m[22m - https://tailwindcss.com/docs/content-configuration
+[32m✓[39m 4 modules transformed.
+[31m✗[39m Build failed in 1.33s
+[31merror during build:
+[31m[vite:css] [postcss] E:/Secure-Data-Vault-share/client/src/index.css:3:1: The `bg-background` class does not exist. If `bg-background` is a custom class, make sure it is defined within a `@layer` directive.[31m
+file: [36mE:/Secure-Data-Vault-share/client/src/index.css:3:0[31m
+    at Input.error (e:\Secure-Data-Vault-share\node_modules\postcss\lib\input.js:135:16)
+    at AtRule.error (e:\Secure-Data-Vault-share\node_modules\postcss\lib\node.js:146:32)
+    at processApply (e:\Secure-Data-Vault-share\node_modules\tailwindcss\lib\lib\expandApplyAtRules.js:380:29)
+    at e:\Secure-Data-Vault-share\node_modules\tailwindcss\lib\lib\expandApplyAtRules.js:551:9
+    at e:\Secure-Data-Vault-share\node_modules\tailwindcss\lib\processTailwindFeatures.js:55:50
+    at async plugins (e:\Secure-Data-Vault-share\node_modules\tailwindcss\lib\plugin.js:38:17)
+    at async LazyResult.runAsync (e:\Secure-Data-Vault-share\node_modules\postcss\lib\lazy-result.js:293:11)
+    at async runPostCSS (file:///e:/Secure-Data-Vault-share/node_modules/vite/dist/node/chunks/config.js:30144:19)
+    at async compilePostCSS (file:///e:/Secure-Data-Vault-share/node_modules/vite/dist/node/chunks/config.js:30128:6)
+    at async compileCSS (file:///e:/Secure-Data-Vault-share/node_modules/vite/dist/node/chunks/config.js:30058:26)[39m
